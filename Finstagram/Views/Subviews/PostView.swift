@@ -28,6 +28,15 @@ struct PostView: View {
                 Image(systemName: "ellipsis")
                     .font(.headline)
             }
+            .padding(.all, 6)
+            
+            
+            // MARK : IMAGE
+            Image("dog1")
+                .resizable()
+                .scaledToFit()
+            
+            
         })
     }
 }
