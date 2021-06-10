@@ -15,6 +15,7 @@
 		EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6B267196C500C2FF2F /* Extensions.swift */; };
 		EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6D2671979C00C2FF2F /* FeedView.swift */; };
 		EDEDCB702671987800C2FF2F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6F2671987800C2FF2F /* PostView.swift */; };
+		EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB7226719CEC00C2FF2F /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EDEDCB6B267196C500C2FF2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EDEDCB6D2671979C00C2FF2F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		EDEDCB6F2671987800C2FF2F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		EDEDCB7226719CEC00C2FF2F /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		EDEDCB5426718C8D00C2FF2F /* Finstagram */ = {
 			isa = PBXGroup;
 			children = (
+				EDEDCB7126719CDC00C2FF2F /* Model */,
 				EDEDCB6A267196B400C2FF2F /* Helpers */,
 				EDEDCB662671951C00C2FF2F /* Views */,
 				EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */,
@@ -111,6 +114,14 @@
 				EDEDCB6B267196C500C2FF2F /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDEDCB7126719CDC00C2FF2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDEDCB7226719CEC00C2FF2F /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */,
+				EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */,
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
 				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
 				EDEDCB702671987800C2FF2F /* PostView.swift in Sources */,
