@@ -13,6 +13,8 @@
 		EDEDCB5D26718C8F00C2FF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB5C26718C8F00C2FF2F /* Preview Assets.xcassets */; };
 		EDEDCB652671908300C2FF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB642671908300C2FF2F /* LaunchScreen.storyboard */; };
 		EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6B267196C500C2FF2F /* Extensions.swift */; };
+		EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6D2671979C00C2FF2F /* FeedView.swift */; };
+		EDEDCB702671987800C2FF2F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6F2671987800C2FF2F /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EDEDCB5E26718C8F00C2FF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEDCB642671908300C2FF2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDEDCB6B267196C500C2FF2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EDEDCB6D2671979C00C2FF2F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		EDEDCB6F2671987800C2FF2F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */,
 				EDEDCB5726718C8D00C2FF2F /* ContentView.swift */,
+				EDEDCB6D2671979C00C2FF2F /* FeedView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		EDEDCB692671953600C2FF2F /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				EDEDCB6F2671987800C2FF2F /* PostView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */,
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
 				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
+				EDEDCB702671987800C2FF2F /* PostView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
