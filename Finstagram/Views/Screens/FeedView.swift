@@ -10,11 +10,8 @@ import SwiftUI
 struct FeedView: View {
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false, content: {
-            PostView()
-            PostView()
-            PostView()
-            PostView()
-            PostView()
+//            PostView()
+
 
             
         })
