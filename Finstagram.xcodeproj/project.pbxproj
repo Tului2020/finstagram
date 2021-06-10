@@ -16,6 +16,7 @@
 		EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6D2671979C00C2FF2F /* FeedView.swift */; };
 		EDEDCB702671987800C2FF2F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6F2671987800C2FF2F /* PostView.swift */; };
 		EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB7226719CEC00C2FF2F /* PostModel.swift */; };
+		EDEDCB752671A03400C2FF2F /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB742671A03400C2FF2F /* PostArrayObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EDEDCB6D2671979C00C2FF2F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		EDEDCB6F2671987800C2FF2F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		EDEDCB7226719CEC00C2FF2F /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		EDEDCB742671A03400C2FF2F /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EDEDCB7226719CEC00C2FF2F /* PostModel.swift */,
+				EDEDCB742671A03400C2FF2F /* PostArrayObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */,
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
 				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
+				EDEDCB752671A03400C2FF2F /* PostArrayObject.swift in Sources */,
 				EDEDCB702671987800C2FF2F /* PostView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
 			);
