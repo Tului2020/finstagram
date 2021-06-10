@@ -12,6 +12,7 @@
 		EDEDCB5A26718C8F00C2FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */; };
 		EDEDCB5D26718C8F00C2FF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB5C26718C8F00C2FF2F /* Preview Assets.xcassets */; };
 		EDEDCB652671908300C2FF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB642671908300C2FF2F /* LaunchScreen.storyboard */; };
+		EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB6B267196C500C2FF2F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EDEDCB5C26718C8F00C2FF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDEDCB5E26718C8F00C2FF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEDCB642671908300C2FF2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDEDCB6B267196C500C2FF2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EDEDCB5426718C8D00C2FF2F /* Finstagram */ = {
 			isa = PBXGroup;
 			children = (
+				EDEDCB6A267196B400C2FF2F /* Helpers */,
 				EDEDCB662671951C00C2FF2F /* Views */,
 				EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */,
 				EDEDCB5E26718C8F00C2FF2F /* Info.plist */,
@@ -94,6 +97,14 @@
 			children = (
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		EDEDCB6A267196B400C2FF2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EDEDCB6B267196C500C2FF2F /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
+				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

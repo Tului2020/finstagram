@@ -33,11 +33,8 @@ struct ContentView: View {
                     Image(systemName: "person.fill")
                     Text("Profile")
                 }
-            
-            
-            
-            
         }
+        .accentColor(Color.MyTheme.purpleColor)
     }
 }
 
