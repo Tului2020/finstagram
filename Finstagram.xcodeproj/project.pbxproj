@@ -54,8 +54,7 @@
 		EDEDCB5426718C8D00C2FF2F /* Finstagram */ = {
 			isa = PBXGroup;
 			children = (
-				EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */,
-				EDEDCB5726718C8D00C2FF2F /* ContentView.swift */,
+				EDEDCB662671951C00C2FF2F /* Views */,
 				EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */,
 				EDEDCB5E26718C8F00C2FF2F /* Info.plist */,
 				EDEDCB5B26718C8F00C2FF2F /* Preview Content */,
@@ -70,6 +69,31 @@
 				EDEDCB5C26718C8F00C2FF2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDEDCB662671951C00C2FF2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDEDCB692671953600C2FF2F /* Subviews */,
+				EDEDCB682671953100C2FF2F /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDEDCB682671953100C2FF2F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */,
+				EDEDCB5726718C8D00C2FF2F /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EDEDCB692671953600C2FF2F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
