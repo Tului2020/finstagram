@@ -10,10 +10,12 @@ import SwiftUI
 struct FeedView: View {
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false, content: {
-            Text("Placeholder")
-            Text("Placeholder")
-            Text("Placeholder")
-            Text("Placeholder")
+            PostView()
+            PostView()
+            PostView()
+            PostView()
+            PostView()
+
             
         })
         .navigationBarTitle("FEED VIEW")
