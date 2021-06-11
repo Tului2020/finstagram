@@ -19,19 +19,20 @@ struct ContentView: View {
             }
             
             
+            
+            BrowseView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Browse")
+                }
+            
             NavigationView {
-                BrowseView()
+                UploadView()
             }
             .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Browse")
+                Image(systemName: "square.and.arrow.up.fill")
+                Text("Upload")
             }
-            
-            Text("Screen3")
-                .tabItem {
-                    Image(systemName: "square.and.arrow.up.fill")
-                    Text("Upload")
-                }
             
             Text("Screen4")
                 .tabItem {
