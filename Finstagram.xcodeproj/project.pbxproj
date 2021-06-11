@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801EF2672DDEF0039441C /* CommentsView.swift */; };
 		EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */; };
 		EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB5726718C8D00C2FF2F /* ContentView.swift */; };
 		EDEDCB5A26718C8F00C2FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED6801EF2672DDEF0039441C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		EDEDCB5226718C8D00C2FF2F /* Finstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinstagramApp.swift; sourceTree = "<group>"; };
 		EDEDCB5726718C8D00C2FF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */,
 				EDEDCB5726718C8D00C2FF2F /* ContentView.swift */,
 				EDEDCB6D2671979C00C2FF2F /* FeedView.swift */,
+				ED6801EF2672DDEF0039441C /* CommentsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
 				EDEDCB752671A03400C2FF2F /* PostArrayObject.swift in Sources */,
 				EDEDCB702671987800C2FF2F /* PostView.swift in Sources */,
+				ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
