@@ -15,6 +15,7 @@
 		ED6801FA267415CF0039441C /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F9267415CF0039441C /* ImageGridView.swift */; };
 		ED6801FC26741BEF0039441C /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801FB26741BEF0039441C /* UploadView.swift */; };
 		ED6801FE26741F4D0039441C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801FD26741F4D0039441C /* ImagePicker.swift */; };
+		ED680200267427070039441C /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801FF267427070039441C /* PostImageView.swift */; };
 		EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */; };
 		EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDCB5726718C8D00C2FF2F /* ContentView.swift */; };
 		EDEDCB5A26718C8F00C2FF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEDCB5926718C8F00C2FF2F /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		ED6801F9267415CF0039441C /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		ED6801FB26741BEF0039441C /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		ED6801FD26741F4D0039441C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ED6801FF267427070039441C /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		EDEDCB5226718C8D00C2FF2F /* Finstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEDCB5526718C8D00C2FF2F /* FinstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinstagramApp.swift; sourceTree = "<group>"; };
 		EDEDCB5726718C8D00C2FF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				ED6801EF2672DDEF0039441C /* CommentsView.swift */,
 				ED6801F52672E7FE0039441C /* BrowseView.swift */,
 				ED6801FB26741BEF0039441C /* UploadView.swift */,
+				ED6801FF267427070039441C /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */,
 				EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */,
+				ED680200267427070039441C /* PostImageView.swift in Sources */,
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
 				ED6801F22672E2350039441C /* MessageView.swift in Sources */,
 				EDEDCB6C267196C500C2FF2F /* Extensions.swift in Sources */,
