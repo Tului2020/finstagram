@@ -34,11 +34,13 @@ struct ContentView: View {
                 Text("Upload")
             }
             
-            Text("Screen4")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
+            NavigationView {
+                ProfileView()
+            }
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("Profile")
+            }
         }
         .accentColor(Color.MyTheme.purpleColor)
     }
