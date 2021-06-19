@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED41F573267D62580002F56F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F572267D62580002F56F /* ProfileView.swift */; };
 		ED41F575267D63600002F56F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F574267D63600002F56F /* ProfileHeaderView.swift */; };
+		ED41F577267D78300002F56F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F576267D78300002F56F /* SettingsView.swift */; };
 		ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801EF2672DDEF0039441C /* CommentsView.swift */; };
 		ED6801F22672E2350039441C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F12672E2350039441C /* MessageView.swift */; };
 		ED6801F42672E34C0039441C /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F32672E34C0039441C /* CommentModel.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		ED41F572267D62580002F56F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ED41F574267D63600002F56F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		ED41F576267D78300002F56F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		ED6801EF2672DDEF0039441C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		ED6801F12672E2350039441C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		ED6801F32672E34C0039441C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				ED6801FB26741BEF0039441C /* UploadView.swift */,
 				ED6801FF267427070039441C /* PostImageView.swift */,
 				ED41F572267D62580002F56F /* ProfileView.swift */,
+				ED41F576267D78300002F56F /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				ED6801FE26741F4D0039441C /* ImagePicker.swift in Sources */,
 				ED6801F82672E8950039441C /* CarouselView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
+				ED41F577267D78300002F56F /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

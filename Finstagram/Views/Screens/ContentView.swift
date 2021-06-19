@@ -19,8 +19,9 @@ struct ContentView: View {
             }
             
             
-            
-            BrowseView()
+            NavigationView {
+                BrowseView()
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Browse")
