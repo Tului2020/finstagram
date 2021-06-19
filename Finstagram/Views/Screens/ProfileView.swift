@@ -13,7 +13,7 @@ struct ProfileView: View {
     @State var profileDisplayName: String;
     var profileUserID: String;
     var posts = PostArrayObject();
-    
+    @State var settingsShown: Bool = false
     
     
     
@@ -28,12 +28,17 @@ struct ProfileView: View {
         .navigationBarTitle("Profile")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
-                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                Button(action: {
+                                    settingsShown = true
+                                }, label: {
                                     Image(systemName: "line.horizontal.3")
                                 })
                                 .accentColor(Color.MyTheme.purpleColor)
                                 .opacity(isMyProfile ? 1.0 : 0.0)
         )
+        .sheet(isPresented: $settingsShown, content: {
+            SettingsView()
+        })
     }
 }
 
