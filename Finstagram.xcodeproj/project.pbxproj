@@ -10,6 +10,8 @@
 		ED41F573267D62580002F56F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F572267D62580002F56F /* ProfileView.swift */; };
 		ED41F575267D63600002F56F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F574267D63600002F56F /* ProfileHeaderView.swift */; };
 		ED41F577267D78300002F56F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F576267D78300002F56F /* SettingsView.swift */; };
+		ED41F579267D79C90002F56F /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F578267D79C90002F56F /* SettingsLabelView.swift */; };
+		ED41F57B267D7C060002F56F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F57A267D7C060002F56F /* SettingsRowView.swift */; };
 		ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801EF2672DDEF0039441C /* CommentsView.swift */; };
 		ED6801F22672E2350039441C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F12672E2350039441C /* MessageView.swift */; };
 		ED6801F42672E34C0039441C /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F32672E34C0039441C /* CommentModel.swift */; };
@@ -35,6 +37,8 @@
 		ED41F572267D62580002F56F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ED41F574267D63600002F56F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		ED41F576267D78300002F56F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ED41F578267D79C90002F56F /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		ED41F57A267D7C060002F56F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		ED6801EF2672DDEF0039441C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		ED6801F12672E2350039441C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		ED6801F32672E34C0039441C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				ED6801F9267415CF0039441C /* ImageGridView.swift */,
 				ED6801FD26741F4D0039441C /* ImagePicker.swift */,
 				ED41F574267D63600002F56F /* ProfileHeaderView.swift */,
+				ED41F578267D79C90002F56F /* SettingsLabelView.swift */,
+				ED41F57A267D7C060002F56F /* SettingsRowView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			files = (
 				EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */,
 				EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */,
+				ED41F579267D79C90002F56F /* SettingsLabelView.swift in Sources */,
 				ED680200267427070039441C /* PostImageView.swift in Sources */,
 				EDEDCB5826718C8D00C2FF2F /* ContentView.swift in Sources */,
 				ED6801F22672E2350039441C /* MessageView.swift in Sources */,
@@ -252,6 +259,7 @@
 				ED6801F82672E8950039441C /* CarouselView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
 				ED41F577267D78300002F56F /* SettingsView.swift in Sources */,
+				ED41F57B267D7C060002F56F /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
