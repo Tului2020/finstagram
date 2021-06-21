@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED38ABE826811D7300F09654 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38ABE726811D7300F09654 /* SettingsEditImageView.swift */; };
 		ED41F573267D62580002F56F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F572267D62580002F56F /* ProfileView.swift */; };
 		ED41F575267D63600002F56F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F574267D63600002F56F /* ProfileHeaderView.swift */; };
 		ED41F577267D78300002F56F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F576267D78300002F56F /* SettingsView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED38ABE726811D7300F09654 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
 		ED41F572267D62580002F56F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ED41F574267D63600002F56F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		ED41F576267D78300002F56F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				ED6801FF267427070039441C /* PostImageView.swift */,
 				ED41F572267D62580002F56F /* ProfileView.swift */,
 				ED41F576267D78300002F56F /* SettingsView.swift */,
+				ED38ABE726811D7300F09654 /* SettingsEditImageView.swift */,
 				ED41F57C26802EB40002F56F /* SettingsEditTextView.swift */,
 			);
 			path = Screens;
@@ -255,6 +258,7 @@
 				ED41F573267D62580002F56F /* ProfileView.swift in Sources */,
 				ED6801F62672E7FE0039441C /* BrowseView.swift in Sources */,
 				ED6801F42672E34C0039441C /* CommentModel.swift in Sources */,
+				ED38ABE826811D7300F09654 /* SettingsEditImageView.swift in Sources */,
 				ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */,
 				ED41F575267D63600002F56F /* ProfileHeaderView.swift in Sources */,
 				ED6801FC26741BEF0039441C /* UploadView.swift in Sources */,
