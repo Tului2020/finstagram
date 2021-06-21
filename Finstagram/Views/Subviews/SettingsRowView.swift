@@ -28,9 +28,12 @@ struct SettingsRowView: View {
             .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
             Text(text)
+                .foregroundColor(.primary)
+            
             Spacer()
             Image(systemName: "chevron.right")
                 .font(.headline)
+                .foregroundColor(.primary)
             
             
         }
