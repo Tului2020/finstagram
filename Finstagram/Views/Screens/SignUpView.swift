@@ -45,6 +45,8 @@ struct SignUpView: View {
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 
             })
+            .accentColor(Color.MyTheme.yellowColor)
+            
             Spacer()
             Spacer()
             
