@@ -62,9 +62,30 @@ struct SettingsView: View {
                 // MARK: SECTION 3: APPLICATION
                 
                 GroupBox(label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone"), content: {
-                    SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor);
-                    SettingsRowView(leftIcon: "folder.fill", text: "Terms and Conditions", color: Color.MyTheme.yellowColor);
-                    SettingsRowView(leftIcon: "globe", text: "Website", color: Color.MyTheme.yellowColor);
+                    
+                    Button(action: {
+                        openCustomURL(urlString: "https://www.google.com")
+                    }, label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor);
+                    })
+                    
+                    Button(action: {
+                        openCustomURL(urlString: "https://www.yahoo.com")
+
+                    }, label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Terms and Conditions", color: Color.MyTheme.yellowColor);
+
+                    })
+                    
+                    
+                    Button(action: {
+                        openCustomURL(urlString: "https://www.bing.com")
+
+                    }, label: {
+                        SettingsRowView(leftIcon: "globe", text: "Website", color: Color.MyTheme.yellowColor);
+                    })
+                    
+                    
                 })
                 .padding()
                 
@@ -94,6 +115,21 @@ struct SettingsView: View {
             )
         }
     }
+    
+    
+    // MARK: FUNCTIONS
+    
+    func openCustomURL(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+    }
+    
+    
+    
 }
 
 struct SettingsView_Previews: PreviewProvider {
