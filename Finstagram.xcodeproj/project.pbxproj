@@ -15,6 +15,8 @@
 		ED41F57B267D7C060002F56F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F57A267D7C060002F56F /* SettingsRowView.swift */; };
 		ED41F57D26802EB40002F56F /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F57C26802EB40002F56F /* SettingsEditTextView.swift */; };
 		ED5E46112683F895000A686C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E46102683F895000A686C /* SignUpView.swift */; };
+		ED5E46132683FC39000A686C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E46122683FC39000A686C /* OnboardingView.swift */; };
+		ED5E46152683FD73000A686C /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5E46142683FD73000A686C /* SignInWithAppleButtonCustom.swift */; };
 		ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801EF2672DDEF0039441C /* CommentsView.swift */; };
 		ED6801F22672E2350039441C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F12672E2350039441C /* MessageView.swift */; };
 		ED6801F42672E34C0039441C /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6801F32672E34C0039441C /* CommentModel.swift */; };
@@ -45,6 +47,8 @@
 		ED41F57A267D7C060002F56F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		ED41F57C26802EB40002F56F /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		ED5E46102683F895000A686C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		ED5E46122683FC39000A686C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		ED5E46142683FD73000A686C /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
 		ED6801EF2672DDEF0039441C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		ED6801F12672E2350039441C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		ED6801F32672E34C0039441C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				ED38ABE726811D7300F09654 /* SettingsEditImageView.swift */,
 				ED41F57C26802EB40002F56F /* SettingsEditTextView.swift */,
 				ED5E46102683F895000A686C /* SignUpView.swift */,
+				ED5E46122683FC39000A686C /* OnboardingView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				ED41F574267D63600002F56F /* ProfileHeaderView.swift */,
 				ED41F578267D79C90002F56F /* SettingsLabelView.swift */,
 				ED41F57A267D7C060002F56F /* SettingsRowView.swift */,
+				ED5E46142683FD73000A686C /* SignInWithAppleButtonCustom.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEDCB6E2671979D00C2FF2F /* FeedView.swift in Sources */,
+				ED5E46152683FD73000A686C /* SignInWithAppleButtonCustom.swift in Sources */,
 				EDEDCB7326719CEC00C2FF2F /* PostModel.swift in Sources */,
 				ED41F579267D79C90002F56F /* SettingsLabelView.swift in Sources */,
 				ED680200267427070039441C /* PostImageView.swift in Sources */,
@@ -266,6 +273,7 @@
 				ED6801F02672DDEF0039441C /* CommentsView.swift in Sources */,
 				ED41F575267D63600002F56F /* ProfileHeaderView.swift in Sources */,
 				ED6801FC26741BEF0039441C /* UploadView.swift in Sources */,
+				ED5E46132683FC39000A686C /* OnboardingView.swift in Sources */,
 				ED6801FE26741F4D0039441C /* ImagePicker.swift in Sources */,
 				ED6801F82672E8950039441C /* CarouselView.swift in Sources */,
 				EDEDCB5626718C8D00C2FF2F /* FinstagramApp.swift in Sources */,
