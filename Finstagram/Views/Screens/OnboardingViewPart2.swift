@@ -33,6 +33,7 @@ struct OnboardingViewPart2: View {
                 .font(.headline)
                 .autocapitalization(.sentences)
                 .padding(.horizontal)
+                .foregroundColor(.black)
             
             
             Button(action: {

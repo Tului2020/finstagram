@@ -14,6 +14,9 @@ struct UploadView: View {
     @State var imageSelected: UIImage = UIImage(named: "logo")!
     @State var sourceType: UIImagePickerController.SourceType = .camera
     @State var showPostImageView: Bool = false
+    @Environment(\.colorScheme) var colorScheme;
+
+    
     
     var body: some View {
         ZStack {
@@ -44,6 +47,9 @@ struct UploadView: View {
             }
             .sheet(isPresented: $showImagePicker, onDismiss: segueToPostImageView, content: {
                 ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
+                    .preferredColorScheme(colorScheme)
+                    .accentColor(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
+
             })
             
             
@@ -54,6 +60,7 @@ struct UploadView: View {
                 .shadow(radius: 12)
                 .fullScreenCover(isPresented: $showPostImageView, content: {
                     PostImageView(imageSelected: $imageSelected)
+                        .preferredColorScheme(colorScheme)
                 })
             
             
@@ -77,5 +84,6 @@ struct UploadView: View {
 struct UploadView_Previews: PreviewProvider {
     static var previews: some View {
         UploadView()
+//            .preferredColorScheme(.dark)
     }
 }
