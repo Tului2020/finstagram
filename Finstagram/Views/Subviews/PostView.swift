@@ -64,6 +64,8 @@ struct PostView: View {
                 if addheartAnimationToView {
                     LikeAnimationView(animate: $animateLike)
                 }
+            }.onTapGesture(count: 2) {
+                post.likedByUser ? unlikePost() : likePost()
             }
 
             
@@ -72,13 +74,7 @@ struct PostView: View {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20, content: {
                     
                     Button(action: {
-                        if post.likedByUser {
-                            unlikePost()
-                        } else {
-//                            like
-                            likePost()
-                        }
-                        
+                        post.likedByUser ? unlikePost() : likePost()
                     }, label: {
                         Image(systemName: post.likedByUser ? "heart.fill" : "heart")
                             .font(.title3)
