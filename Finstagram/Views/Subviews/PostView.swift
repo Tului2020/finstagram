@@ -11,8 +11,15 @@ struct PostView: View {
     
     @State var post: PostModel;
     var showHeaderAndFoother: Bool;
+    @State var postImage: UIImage = UIImage(named: "dog1")!;
     
     @State var animateLike: Bool = false;
+    @State var addheartAnimationToView: Bool;
+    
+//    @State var showActionSheet: Bool = false;
+//    @State var actionSheetType: PostActionSheetOption = .general
+    
+
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
@@ -54,7 +61,9 @@ struct PostView: View {
                     .resizable()
                     .scaledToFit()
                 
-                LikeAnimationView(animate: $animateLike)
+                if addheartAnimationToView {
+                    LikeAnimationView(animate: $animateLike)
+                }
             }
 
             
@@ -136,7 +145,7 @@ struct PostView_Previews: PreviewProvider {
     static var post: PostModel = PostModel(postID: "", userID: "", username: "Joe Green", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post, showHeaderAndFoother: true)
+        PostView(post: post, showHeaderAndFoother: true, addheartAnimationToView: true)
             .previewLayout(.sizeThatFits)
     }
 }
