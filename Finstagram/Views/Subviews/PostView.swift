@@ -16,10 +16,14 @@ struct PostView: View {
     @State var animateLike: Bool = false;
     @State var addheartAnimationToView: Bool;
     
-//    @State var showActionSheet: Bool = false;
-//    @State var actionSheetType: PostActionSheetOption = .general
+    @State var showActionSheet: Bool = false;
+    @State var actionSheetType: PostActionSheetOption = .general
     
-
+    enum PostActionSheetOption {
+        case general
+        case reporting
+    }
+    
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
@@ -42,12 +46,23 @@ struct PostView: View {
                                 .foregroundColor(.primary)
                         })
                     
-
+                    
                     
                     Spacer()
                     
-                    Image(systemName: "ellipsis")
-                        .font(.headline)
+                    
+                    Button(action: {
+                        
+                        showActionSheet.toggle()
+                    }, label: {
+                        Image(systemName: "ellipsis")
+                            .font(.headline)
+                        
+                    })
+                    .accentColor(.primary)
+                    .actionSheet(isPresented: $showActionSheet, content: {
+                        getActionSheet()
+                    })
                 }
                 .padding(.all, 6)
             }
@@ -57,7 +72,7 @@ struct PostView: View {
             // MARK: IMAGE
             
             ZStack {
-                Image("dog1")
+                Image(uiImage: postImage)
                     .resizable()
                     .scaledToFit()
                 
@@ -67,7 +82,7 @@ struct PostView: View {
             }.onTapGesture(count: 2) {
                 post.likedByUser ? unlikePost() : likePost()
             }
-
+            
             
             // MARK: FOOTER
             if (showHeaderAndFoother) {
@@ -80,7 +95,7 @@ struct PostView: View {
                             .font(.title3)
                     })
                     .accentColor(post.likedByUser ? .red : .primary)
-
+                    
                     
                     
                     
@@ -88,19 +103,24 @@ struct PostView: View {
                     NavigationLink(
                         destination: CommentsView(),
                         label: {
-                        Image(systemName: "bubble.middle.bottom")
+                            Image(systemName: "bubble.middle.bottom")
+                                .font(.title3)
+                                .foregroundColor(.primary)
+                        })
+                    
+                    Button(action: {
+                        sharePost()
+                    }, label: {
+                        Image(systemName: "paperplane")
                             .font(.title3)
-                            .foregroundColor(.primary)
                     })
-                    
-                    
-                    Image(systemName: "paperplane")
-                        .font(.title3)
+                    .accentColor(.primary)
+
                     
                     Spacer()
                     
                 })
-                    .padding(.all, 6)
+                .padding(.all, 6)
                 
                 
                 if let caption = post.caption {
@@ -116,7 +136,7 @@ struct PostView: View {
         })
     }
     
-//    MARK: FUNCTIONS
+    //    MARK: FUNCTIONS
     
     func likePost() {
         let updatedPost = PostModel(postID: post.postID, userID: post.userID, username: post.username, caption: post.caption, dateCreated: post.dateCreated, likeCount: post.likeCount + 1, likedByUser: true)
@@ -133,6 +153,66 @@ struct PostView: View {
         self.post = updatedPost;
     }
     
+    
+    func getActionSheet() -> ActionSheet {
+        
+        switch self.actionSheetType {
+        case .general:
+            return ActionSheet(title: Text("What would you like to do?"), message: nil, buttons: [
+                .destructive(Text("Report"), action: {
+                    self.actionSheetType = .reporting;
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        self.showActionSheet.toggle()
+                    }
+                    
+                }),
+                .default(Text("Learn more..."), action: {
+                    print("LEARN MORE PRESSED")
+                }),
+                
+                .cancel()
+            ])
+        case .reporting:
+            return ActionSheet(title: Text("Why are you reporting this post?"), message: nil, buttons: [
+                .destructive(Text("This is inappropriate"), action: {
+                    reportPost(reason: "This is inappropriate")
+                }),
+                .destructive(Text("This is spam"), action: {
+                    reportPost(reason: "This is spam")
+                }),
+                .destructive(Text("It made me uncomfortable"), action: {
+                    reportPost(reason: "It made me uncomfortable")
+                }),
+                
+                .cancel({
+                    self.actionSheetType = .general
+                })
+                
+            ])
+        }
+        
+        
+
+    }
+    
+    
+    func reportPost(reason: String) {
+        print("REPORT POST NOW")
+    }
+    
+    func sharePost() {
+        
+        let message = "Checkout this post on Finstagram!";
+        let image = postImage;
+        let link = URL(string: "https://www.google.com")!;
+        
+        let activityViewController = UIActivityViewController(activityItems: [message, image, link], applicationActivities: nil);
+        
+        let viewController = UIApplication.shared.windows.first?.rootViewController
+        viewController?.present(activityViewController, animated: true, completion: nil)
+        
+    }
     
 }
 
